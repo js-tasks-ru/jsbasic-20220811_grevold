@@ -1,3 +1,6 @@
 function namify(users) {
-  // ваш код...
+  function getUserName(user) {
+    return user.name;
+  }
+  return users.map(getUserName);
 }
