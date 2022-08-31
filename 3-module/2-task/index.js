@@ -1,3 +1,7 @@
 function filterRange(arr, a, b) {
-  // ваш код...
+  function intervalOfNum(x) {
+    if (x >= a && x <= b) return true;
+    return false;
+  }
+  return arr.filter(intervalOfNum);
 }
