@@ -85,6 +85,7 @@ describe('6-module-3-task', () => {
       it('при достижении крайнего слайда, должна скрыть стрелку переключения вперёд', () => {
         carouselArrowRight.dispatchEvent(clickEvent);
         carouselArrowRight.dispatchEvent(clickEvent);
+        carouselArrowRight.dispatchEvent(clickEvent);
 
         expect(carouselArrowRight.style.display).toBe('none');
       });
